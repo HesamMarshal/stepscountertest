@@ -7,6 +7,11 @@ android {
     compileSdkVersion 30
     buildToolsVersion "31.0.0 rc2"
 
+
+    buildFeatures{
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.hesammarshal.stepcounter"
         minSdkVersion 24
@@ -42,4 +47,6 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.mikhaellopez:circularprogressbar:3.0.3'
 }
